@@ -53,6 +53,8 @@ console.log("item 7 == ", item_7, "\nitem 7 type == ", item_7_type);
 //  32. Если age_1  > age_3, вывести в консоль “Keep calm and look Culture channel”.
 //  33. Иначе выводите “Technical work”.
 
+setTimeout(5000);
+
 let age_1 = prompt ("Введите AGE 1", ''); // 10
 let age_2 = prompt ("Введите AGE 2", ''); // 18
 let age_3 = prompt ("Введите AGE 3", ''); // 60
