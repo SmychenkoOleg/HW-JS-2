@@ -54,23 +54,24 @@ console.log("item 7 == ", item_7, "\nitem 7 type == ", item_7_type);
 //  33. Иначе выводите “Technical work”.
 
 
+setTimeout(function(){
+  let age_1 = prompt ("Введіть вік № 1", ''); // 10
+  let age_2 = prompt ("Введіть вік № 2", ''); // 18
+  let age_3 = prompt ("Введіть вік № 3", ''); // 60
 
-let age_1 = prompt ("Введіть вік № 1", ''); // 10
-let age_2 = prompt ("Введіть вік № 2", ''); // 18
-let age_3 = prompt ("Введіть вік № 3", ''); // 60
-
-setTimeout(if (age_1 < age_2)
-  {
-    alert("Нажаль, Ви не маєте доступу, тому що Вам зараз " + age_1 + " Це трохи замало! ")
-  }
+  if (age_1 < age_2){
+    alert("Нажаль, Ви не маєте доступу, тому що Вам зараз " + age_1 + " Це трохи замало! ");
+    }
     else{
-      if(age_1 >= age_2 & age_1 < age_3)
-        {
-          alert("Ласкаво Просимо !!!")
+      if(age_1 >= age_2 & age_1 < age_3){
+          alert("Ласкаво Просимо !!!");
         }
         else{
-          alert("Будьте спокійними та вірьте у ЗСУ !")
+          alert("Будьте спокійними та вірьте у ЗСУ !");
             }
-          }, 5000);
+          }
+
+}, 3000);
+
 
 //return;
