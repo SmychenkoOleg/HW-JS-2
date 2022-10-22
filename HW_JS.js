@@ -61,15 +61,15 @@ let age_3 = prompt ("Введите AGE 3", ''); // 60
 
 if (age_1 < age_2)
   {
-    alert("You don’t have access cause your age is " + age_1 + " It’s less then ")
+    alert("Нажаль, Ви не маэте доступу, тому що Вам зараз " + age_1 + " Це трози замало! ")
   }
     else{
       if(age_1 >= age_2 & age_1 < age_3)
         {
-          alert("WELCOME !!!")
+          alert("Ласкаво Просимо !!!")
         }
         else{
-          alert("Keep calm and look Culture channel")
+          alert("Будьте спокійними та вірьте у ЗСУ !")
             }
           };
 
