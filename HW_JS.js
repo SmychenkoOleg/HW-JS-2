@@ -55,9 +55,9 @@ console.log("item 7 == ", item_7, "\nitem 7 type == ", item_7_type);
 
 setTimeout(5000);
 
-let age_1 = prompt ("Введите AGE 1", ''); // 10
-let age_2 = prompt ("Введите AGE 2", ''); // 18
-let age_3 = prompt ("Введите AGE 3", ''); // 60
+let age_1 = prompt ("Введіть вік № 1", ''); // 10
+let age_2 = prompt ("Введіть вік № 2", ''); // 18
+let age_3 = prompt ("Введіть вік № 3", ''); // 60
 
 if (age_1 < age_2)
   {
