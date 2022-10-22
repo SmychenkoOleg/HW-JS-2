@@ -1,0 +1,32 @@
+.parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.parent2 {
+  margin: 20px auto;
+  width: 400px;
+  height: 200px;
+  border-style: dashed;
+  border-width: 3px;
+  border-color: rgb(0, 16, 165);
+}
+.child {
+  width: 200px;
+  height: 200px;
+  border-style: dashed;
+  border-width: 3px;
+  border-color: rgb(0, 16, 165);
+}
+
+.title {
+  font-style: 20px;
+  font-weight: bold;
+  text-align: center;
+}
