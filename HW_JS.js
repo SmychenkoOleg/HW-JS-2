@@ -74,28 +74,18 @@ console.log("item 7 == ", item_7, "\nitem 7 type == ", item_7_type);
 //       } while(!string || !string.trim().length)
 //   };
 
-'use strict';
-
-setTimeout(agePrompt, 3000);
-
-let age1 = agePrompt();
-let age2 = agePrompt();
-let age3 = agePrompt();
-
-ifAge(age1, age2, age3);
-
+"use strict";
 
 function ifAge(age1, age2, age3){
   if (age1 < age2){
     alert("Нажаль, Ви не маєте доступу, тому що Вам зараз " + age1 + " Це трохи замало! ");
     }
-    else if(age1 >= age2 && age1 < age3){
+    else if(age1 >= age2 & age1 < age3){
           alert("Ласкаво Просимо !!!");
         }
         else{
           alert("Будьте спокійними та вірьте у ЗСУ !");
           }
-return;
         };
 
 function agePrompt(){
@@ -111,7 +101,17 @@ function agePrompt(){
             return string;
         }
     } while (!string || !string.trim().length);
-}
+};
+
+//setTimeout(agePrompt, 3000);
+
+let age1 = agePrompt();
+let age2 = agePrompt();
+let age3 = agePrompt();
+
+ifAge(age1, age2, age3);
+
+
 
 // function age2(){
 //     let string = "";
