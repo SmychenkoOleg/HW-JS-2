@@ -103,52 +103,12 @@ function agePrompt(){
     } while (!string || !string.trim().length);
 };
 
-//setTimeout(agePrompt, 3000);
-
+function allRun(){
 let age1 = agePrompt();
 let age2 = agePrompt();
 let age3 = agePrompt();
 
 ifAge(age1, age2, age3);
+};
 
-
-
-// function age2(){
-//     let string = "";
-//     let age_2;
-//     do {
-//         string = prompt("Введіть вік № 2", "");
-//         if(!string){
-//             alert("Ну якого біса? Будемо вводити чи будемо хєрнею страдати?")
-//         } else if (string.trim().length == 0){
-//             alert("Ну не треба бавитись - введіть вже число!")
-//         } else {
-//             alert("Нарешті, ітіть-колотіть!")
-//             age_2 = string;
-//             alert(age_2);
-//         }
-//     } while (!string || !string.trim().length)
-// }
-
-// function age3(){
-//     let string = "";
-//     let age_3;
-//     do {
-//         string = prompt("Введіть вік № 3", "");
-//         if(!string){
-//             alert("Ну якого біса? Будемо вводити чи будемо хєрнею страдати?")
-//         } else if (string.trim().length == 0){
-//             alert("Ну не треба бавитись - введіть вже число!")
-//         } else {
-//             alert("Нарешті, ітіть-колотіть!")
-//             age_3 = string;
-//             alert(age_3);
-//         }
-//     } while (!string || !string.trim().length)
-// }
-
-
-// age1();
-// age2();
-// age3();
-// ifAge();
+setTimeout(allRun, 3000);
