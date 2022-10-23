@@ -85,7 +85,7 @@ function ifAge(age1, age2, age3){
         }
         else{
           alert("Будьте спокійними та вірьте у ЗСУ !");
-          }
+        }
         };
 
 function agePrompt(){
@@ -103,12 +103,21 @@ function agePrompt(){
     } while (!string || !string.trim().length);
 };
 
+function goodBye(){
+  let gBye = document.querySelector(".h2");
+  gBye.innerHTML = "Дякую, до побачення!";
+};
+
 function allRun(){
     let age1 = agePrompt();
     let age2 = agePrompt();
     let age3 = agePrompt();
 
     ifAge(age1, age2, age3);
+    goodBye();
     };
 
 setTimeout(allRun, 3000);
+
+
+
