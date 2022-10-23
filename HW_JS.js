@@ -104,11 +104,11 @@ function agePrompt(){
 };
 
 function allRun(){
-let age1 = agePrompt();
-let age2 = agePrompt();
-let age3 = agePrompt();
+    let age1 = agePrompt();
+    let age2 = agePrompt();
+    let age3 = agePrompt();
 
-ifAge(age1, age2, age3);
-};
+    ifAge(age1, age2, age3);
+    };
 
 setTimeout(allRun, 3000);
