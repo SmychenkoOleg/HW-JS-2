@@ -54,52 +54,101 @@ console.log("item 7 == ", item_7, "\nitem 7 type == ", item_7_type);
 //  33. Иначе выводите “Technical work”.
 
 
-setTimeout(age1, 3000);
+// setTimeout(age1, 3000);
 
-function age1(){
+// function age1(){
+//   let age_1;
+//   let string;
 
-  let string = prompt ("Введіть вік № 1", '');
-  if (string === null) {
-    alert('Ну якого біса? Будемо вводити чи будемо хєрнею страдати?');
+//   do {
+//   string = prompt ("Введіть вік № 1", '');
+//   if (string === null) {
+//     alert('Ну якого біса? Будемо вводити чи будемо хєрнею страдати?');
+//     }
+//   else if (string.length === 0 || string === " ") {
+//     alert('Ну не треба бавитись - введіть число!');
+//     }
+//   else {
+//       age_1 = string;
+//        }
+//       } while(!string || !string.trim().length)
+//   };
+
+'use strict';
+
+setTimeout(agePrompt, 3000);
+
+let age1 = agePrompt();
+let age2 = agePrompt();
+let age3 = agePrompt();
+
+ifAge(age1, age2, age3);
+
+
+function ifAge(age1, age2, age3){
+  if (age1 < age2){
+    alert("Нажаль, Ви не маєте доступу, тому що Вам зараз " + age1 + " Це трохи замало! ");
     }
-  else if (string.length === 0 || string === " ") {
-    alert('Ну не треба бавитись - введіть число!');
-    }
-  else {
-      let age_1 = string;
-       }
-  };
-
-  // let age_2 = prompt ("Введіть вік № 2", ''); // 18
-  // let age_3 = prompt ("Введіть вік № 3", ''); // 60
-
-
-
-
-function ifAge(){
-  if (age_1 < age_2){
-    alert("Нажаль, Ви не маєте доступу, тому що Вам зараз " + age_1 + " Це трохи замало! ");
-    }
-    else if(age_1 >= age_2 & age_1 < age_3){
+    else if(age1 >= age2 && age1 < age3){
           alert("Ласкаво Просимо !!!");
         }
         else{
           alert("Будьте спокійними та вірьте у ЗСУ !");
-            }
+          }
+return;
+        };
 
-  // if (age_1 < age_2){
-  //   alert("Нажаль, Ви не маєте доступу, тому що Вам зараз " + age_1 + " Це трохи замало! ");
-  //   }
-  //   else{
-  //     if(age_1 >= age_2 & age_1 < age_3){
-  //         alert("Ласкаво Просимо !!!");
-  //       }
-  //       else{
-  //         alert("Будьте спокійними та вірьте у ЗСУ !");
-  //           }
-  //         }
+function agePrompt(){
+    let string = "";
+    do {
+        string = prompt("Введіть значення віку ", "");
+        if(!string){
+            alert("Фі, яка ви некультурна скотиняка!");
+            return;
+        } else if (string.trim().length == 0){
+            alert("Ну не треба бавитись - введіть вже число!");
+        } else {
+            return string;
+        }
+    } while (!string || !string.trim().length);
+}
+
+// function age2(){
+//     let string = "";
+//     let age_2;
+//     do {
+//         string = prompt("Введіть вік № 2", "");
+//         if(!string){
+//             alert("Ну якого біса? Будемо вводити чи будемо хєрнею страдати?")
+//         } else if (string.trim().length == 0){
+//             alert("Ну не треба бавитись - введіть вже число!")
+//         } else {
+//             alert("Нарешті, ітіть-колотіть!")
+//             age_2 = string;
+//             alert(age_2);
+//         }
+//     } while (!string || !string.trim().length)
+// }
+
+// function age3(){
+//     let string = "";
+//     let age_3;
+//     do {
+//         string = prompt("Введіть вік № 3", "");
+//         if(!string){
+//             alert("Ну якого біса? Будемо вводити чи будемо хєрнею страдати?")
+//         } else if (string.trim().length == 0){
+//             alert("Ну не треба бавитись - введіть вже число!")
+//         } else {
+//             alert("Нарешті, ітіть-колотіть!")
+//             age_3 = string;
+//             alert(age_3);
+//         }
+//     } while (!string || !string.trim().length)
+// }
 
 
-
-
-//return;
+// age1();
+// age2();
+// age3();
+// ifAge();
